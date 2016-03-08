@@ -1,0 +1,22 @@
+<ion-view view-title="Create List">
+	<ion-nav-buttons side="right">
+	 <button class="button button-icon ion-ios-arrow-right" ui-sref="app.mylist">
+	 	To your lists
+	 </button>
+	</ion-nav-buttons>
+	<ion-content>
+		<form ng-submit="newGoList(list)">
+		 	<div class="list card">
+		 		<div class="item">
+		 			<input type="text" placeholder="Please enter a list" ng-model="list.title">
+		 		</div>
+		 	</div>
+		 	<div class="padding">
+		 		<button class="button button-block button-energized"
+		 				ng-click="newList(list)" ui-sref="noMenu.list">Save</button>
+		 	</div>
+	 	</form>
+	</ion-content>
+</ion-view>
+
+

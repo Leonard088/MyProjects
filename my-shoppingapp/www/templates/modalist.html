@@ -1,0 +1,26 @@
+<div class="modal">
+	
+	<!-- Modal header bar -->
+	<ion-header-bar class="bar-energized">
+      <h1 class="title">New List</h1>
+        <button class="button button-clear" ng-click="closeNewList()">Cancel</button>
+    </ion-header-bar>
+
+    <!-- Modal content area -->
+    <ion-content>
+
+      <form ng-submit="newList(list)">
+        <div class="list card">
+          <div class="item">
+            <input type="text" placeholder="List Name" ng-model="list.title">
+          </div>
+        </div>
+        <div class="padding">
+          <button type="submit" class="button button-block button-energized">Add New List</button>
+        </div>
+      </form>
+
+    </ion-content>
+
+	
+</div>

@@ -1,0 +1,12 @@
+img {
+	width: 30%;
+	height: 30%;
+}
+
+.name {
+	display:inline-block;
+	float:right;
+	padding-top: 40px;
+	position: absolute;
+}
+

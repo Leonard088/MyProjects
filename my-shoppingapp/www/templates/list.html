@@ -1,0 +1,24 @@
+<ion-view view-title="Products">
+	<form ng-submit="">
+		<ion-header-bar class="bar bar-subheader item-input-inset">
+	        <label class="item-input-wrapper">
+	            <i class="icon ion-ios7-search placeholder-icon"></i>
+	            <input type="search" placeholder="Search"
+	            	   ng-model="searchFilter">
+	            <button class="button button-icon button-clear ion-ios-close-empty"></button>
+	        </label>
+		</ion-header-bar>
+	</form>
+	<ion-nav-buttons side="right">
+		<button class="button button-icon ion-android-done" ui-sref="app.mylist"></button>
+	</ion-nav-buttons>
+	<ion-content>
+	    <ion-list>
+	      <ion-item ng-repeat="item in products | filter:searchFilter" ng-click="addItem(item)">
+			<img ng-src="{{item.src}}">
+			<span class="name">{{item.name}}</span>
+	      </ion-item>
+	    </ion-list>
+	</ion-content>
+</ion-view>
+
